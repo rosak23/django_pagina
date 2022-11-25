@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Formulario(models.Model):
     nombre = models.CharField(max_length=100, verbose_name='Nombre')
@@ -12,4 +13,4 @@ class Formulario(models.Model):
     descripcion = models.TextField(max_length=500, verbose_name='Decripción')
 
     class Meta:
-        db_table='formulario'
+        db_table = 'formulario'
