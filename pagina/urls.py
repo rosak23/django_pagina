@@ -1,6 +1,6 @@
-from os import path
-from pagina import views
+from django.urls import path
+from .import views
 
 urlpatterns = [
-    path('', views.vistaIndex, name='index'),
+    path('', views.vistaIndex),
 ]

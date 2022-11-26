@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>System Soluciones</title>
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href='{% static "img/icon.png" %}' type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/estilos.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;display=swap" rel="stylesheet"> 
 </head>
 
@@ -18,7 +19,7 @@
         <nav >
             <div class="logocab">
                 <b class="navbar-logo" href="#">
-                    <img src="img/logo2.png" height="80" >
+                    <img src='{% static "img/logo2.png" %}' height="80" >
                 </b>
                 <b class="textlogo" href="#">System Soluciones</b>
             </div>
@@ -46,7 +47,7 @@
         <section class="contenedor sobre-nosotros">
             <h2 id="titulo" class="titulo">Nuestros productos</h2>
             <div class="contenedor-sobre-nosotros">
-                <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
+                <img src={% static "img/ilustracion2.svg" %} alt="" class="imagen-about-us">
                 <div class="contenido-textos">
                     <h3><span>1</span>Sistemas informaticos</h3>
                     <p>Contamos con sistemas informaticos para varias ramas de negocios y brindamos el mejor soporte del mercado.
@@ -68,58 +69,58 @@
                 <h2 id="portafolio" class="titulo">Portafolio de Clientes</h2>
                 <div class="galeria-port">
                     <div class="imagen-port">
-                        <img src="img/img1.jpg" alt="">
+                        <img src='{% static "img/img1.jpg" %}' alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src='{% static "img/icono1.png" %}' alt="">
                             <p>Motos Mendes</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img2.jpg" alt="">
+                        <img src='{% static "img/img2.jpg" %}' alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src='{% static "img/icono1.png" %}' alt="">
                             <p>Towers</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img3.jpg" alt="">
+                        <img src='{% static "img/img3.jpg" %}' alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src='{% static "img/icono1.png" %}' alt="">
                             <p>Farmacia Real</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img1.jpg" alt="">
+                        <img src='{% static "img/img1.jpg" %}' alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src='{% static "img/icono1.png" %}' alt="">
                             <p>Vet & Cia</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img4.jpg" alt="">
+                        <img src='{% static "img/img4.jpg" %}' alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src='{% static "img/icono1.png" %}' alt="">
                             <p>Ferreteria Central</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img5.jpg" alt="">
+                        <img src='{% static "img/img5.jpg" %}' alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src='{% static "img/icono1.png" %}' alt="">
                             <p>Mercado Mendes</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img6.jpg" alt="">
+                        <img src='{% static "img/img6.jpg" %}' alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src='{% static "img/icono1.png" %}' alt="">
                             <p>Ferreteria Arco Iris</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img7.jpg" alt="">
+                        <img src='{% static "img/img7.jpg" %}' alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src='{% static "img/icono1.png" %}' alt="">
                             <p>M&M Embalajes</p>
                         </div>
                     </div>
@@ -132,17 +133,17 @@
                 <h2 id="servicios" class="titulo">Nuestros servicios</h2>
                 <div class="servicio-cont">
                     <div class="servicio-ind">
-                        <img src="img/ilustracion1.svg" alt="">
+                        <img src='{% static "img/ilustracion1.svg" %}' alt="">
                         <h3>Sistema de Ventas</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
                     </div>
                     <div class="servicio-ind">
-                        <img src="img/ilustracion4.svg" alt="">
+                        <img src='{% static "img/ilustracion4.svg" %}' alt="">
                         <h3>Sistema de control de producción</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
                     </div>
                     <div class="servicio-ind">
-                        <img src="img/ilustracion3.svg" alt="">
+                        <img src='{% static "img/ilustracion3.svg" %}' alt="">
                         <h3>Desarrollo de paginas web</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
                     </div>

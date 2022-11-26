@@ -1,3 +1,14 @@
 user= system
 correo = systemkey@gmail.com
 pass = key2624
+
+
+versiones de paquetes
+pip freeze
+asgiref==3.5.2
+certifi @ file:///C:/b/abs_ac29jvt43w/croot/certifi_1665076682579/work/certifi
+Django==3.2.16
+mysqlclient==2.1.1
+pytz==2022.6
+sqlparse==0.4.3
+wincertstore==0.2
