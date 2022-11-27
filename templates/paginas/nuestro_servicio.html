@@ -1,0 +1,26 @@
+{% extends 'paginas/index.html' %}
+{% load static %}
+{% block nuestro_servicio %}
+<section class="about-services">
+            <div class="contenedor">
+                <h2 id="servicios" class="titulo">Nuestros servicios</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src='{% static "img/ilustracion1.svg" %}' alt="">
+                        <h3>Sistema de Ventas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src='{% static "img/ilustracion4.svg" %}' alt="">
+                        <h3>Sistema de control de producción</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src='{% static "img/ilustracion3.svg" %}' alt="">
+                        <h3>Desarrollo de paginas web</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}

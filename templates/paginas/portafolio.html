@@ -1,0 +1,71 @@
+{% extends 'paginas/index.html' %}
+{% load static %}
+
+#contenido de portafolio
+{% block portafolio %}
+
+    <section class="portafolio">
+            <div class="contenedor">
+                <h2 id="portafolio" class="titulo">Portafolio de Clientes</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src='{% static "img/img1.jpg" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src='{% static "img/icono1.png" %}' alt="">
+                            <p>Motos Mendes</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src='{% static "img/img2.jpg" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src='{% static "img/icono1.png" %}' alt="">
+                            <p>Towers</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src='{% static "img/img3.jpg" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src='{% static "img/icono1.png" %}' alt="">
+                            <p>Farmacia Real</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src='{% static "img/img1.jpg" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src='{% static "img/icono1.png" %}' alt="">
+                            <p>Vet & Cia</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src='{% static "img/img4.jpg" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src='{% static "img/icono1.png" %}' alt="">
+                            <p>Ferreteria Central</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src='{% static "img/img5.jpg" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src='{% static "img/icono1.png" %}' alt="">
+                            <p>Mercado Mendes</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src='{% static "img/img6.jpg" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src='{% static "img/icono1.png" %}' alt="">
+                            <p>Ferreteria Arco Iris</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src='{% static "img/img7.jpg" %}' alt="">
+                        <div class="hover-galeria">
+                            <img src='{% static "img/icono1.png" %}' alt="">
+                            <p>M&M Embalajes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% endblock %}
