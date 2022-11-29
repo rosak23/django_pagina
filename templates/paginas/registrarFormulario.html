@@ -1,36 +1,6 @@
 {% extends 'paginas/base.html' %}
 {% load static %}
 
- {% block header %}
-    <header>
-        <nav >
-            <div class="logocab">
-                <b class="navbar-logo" href="#">
-                    <img src='{% static "img/logo2.png" %}' height="80" >
-                </b>
-                <b class="textlogo" href="#">System Soluciones</b>
-            </div>
-
-            <a href="{% url 'index' %}">Inicio</a>
-            <a href="{% url 'producto' %}">Productos</a>
-            <a href="{% url 'portafolio' %}">Portafolio</a>
-            <a href="{% url 'nuestro_servicio' %}">Servicios</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-        <br>
-        <br>
-        <br>
-        <section class="textos-header">
-            <h1>25 años en el MERCADO</h1>
-            <h2>Confianza solida de nuestros CLIENTES</h2>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
-            </svg></div>
-    </header>
- {% endblock %}
 
 {% block contenido %}
 
@@ -85,28 +55,3 @@
 
 
 {% endblock %}
-
- {% block footer %}
-
-    <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4 id="contacto">Contactenos a los siguientes numeros</h4>
-                <p>+595983192276</p>
-                <p>+595983192276</p>
-                <p>+595983192276</p>
-            </div>
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>systemsoluciones@gmail.com</p>
-            </div>
-            <div class="content-foo">
-                <h4>Ubicación</h4>
-                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.795292021319!2d-54.31539091869174!3d-24.07351234421025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f4b13f2fa2b1a5%3A0x532549cb4007e609!2sStudio%20Integrado%20Essence!5e0!3m2!1ses!2spy!4v1655818866977!5m2!1ses!2spy"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-            </div>
-        </div>
-
-    </footer>
-
- {% endblock %}
