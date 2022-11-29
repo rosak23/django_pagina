@@ -15,11 +15,12 @@ class FormularioForm(forms.ModelForm):
                   'descripcion', ]
 
         widgets = {
-            'nombre': forms.TextInput(attrs={'Placeholder': 'Nombre'}),
-            'empresa': forms.TextInput(attrs={'Placeholder': 'Empresa'}),
-            'email': forms.EmailInput(attrs={'Placeholder': 'Correo Electronico'}),
-            'telefono': forms.TextInput(attrs={'Placeholder': 'Celular'}),
-            'ciudad': forms.TextInput(attrs={'Placeholder': 'Ciudad'}),
-            'soporte_actual': forms.TextInput(attrs={'Placeholder': 'Soporte Actual'}),
-            'facturacion_mensual': forms.TextInput(attrs={'Placeholder': 'Facturación Mensual'}),
-            'descripcion': forms.Textarea(attrs={'Placeholder': 'Describenos para conocerte mejor'}), }
+            'nombre': forms.TextInput(attrs={'Placeholder': 'Nombre', 'class': 'form-control'}),
+            'empresa': forms.TextInput(attrs={'Placeholder': 'Empresa', 'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'Placeholder': 'Correo Electronico', 'class': 'form-control'}),
+            'telefono': forms.NumberInput(attrs={'Placeholder': 'Celular', 'class': 'form-control'}),
+            'ciudad': forms.TextInput(attrs={'Placeholder': 'Ciudad', 'class': 'form-control'}),
+            'soporte_actual': forms.Select(attrs={'Placeholder': 'Soporte Actual', 'class': 'form-control'}),
+            'facturacion_mensual': forms.Select(attrs={'Placeholder': 'Facturación Mensual', 'class': 'form-control'}),
+            'descripcion': forms.Textarea(attrs={'Placeholder': 'Describenos para conocerte mejor', 'class': 'form-control'}),
+        }

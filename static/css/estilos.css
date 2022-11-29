@@ -307,6 +307,10 @@ footer{
     color: #9e9797;
 }
 
+#container{
+    align-content: 500px;
+}
+
 @media screen and (max-width:900px){
     header{
         background-position: center;

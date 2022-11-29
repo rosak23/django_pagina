@@ -34,20 +34,56 @@
 
 {% block contenido %}
 
-<seccion>
+    <section id="container">
 
-<form method="post">
-    {% csrf_token %}
+        <form  method="post">
+                {% csrf_token %}
+            <div class="col-md-6">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nombre</label>
+                        {{ formulario.nombre }}
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Empresa</label>
+                        {{formulario.empresa}}
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        {{formulario.email}}
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Telefono</label>
+                        {{formulario.telefono}}
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCiudad">Ciudad</label>
+                        {{formulario.ciudad}}
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputSoporte">Soporte Actual</label>
+                        {{formulario.soporte_actual}}
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputSoporte">Facturación Mensual</label>
+                        {{formulario.facturacion_mensual}}
 
-  <div class="form-group">
-    {{ formulario.as_p }}
-  </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h5><span>Describenos un poco más de las necesidades de tu Empresa</span></h5>
+                        {{formulario.descripcion}}
+                    </div>
+                    <div class="form-group col-md-12">
+                        <button type="submit" class="btn btn-primary" id="btnGuardarFormulario">Enviar Formulario</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+    </section>
 
 
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
-</seccion>
 {% endblock %}
 
  {% block footer %}
