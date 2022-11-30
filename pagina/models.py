@@ -21,6 +21,8 @@ facturacion_mensual = [
 ]
 
 
+
+
 # Create your models here.
 class Formulario(models.Model):
     nombre = models.CharField(max_length=100, verbose_name='Nombre')
@@ -28,11 +30,11 @@ class Formulario(models.Model):
     email = models.EmailField(max_length=100, verbose_name='Email')
     telefono = models.CharField(max_length=20, verbose_name='Teléfono')
     ciudad = models.CharField(max_length=150, verbose_name='Ciudad')
-    soporte_actual = models.TextField(max_length=150, verbose_name='Soporte Actual', blank=False, null=False,
-                                      choices=opcion_soporte_actual, )
-    facturacion_mensual = models.CharField(max_length=60, verbose_name='Facturación Anual', blank=False, null=False,
-                                           choices=facturacion_mensual, )
+    rubro = models.CharField(max_length=150, verbose_name='Rubro', blank=True, null=True)
+    soporte_actual = models.TextField(max_length=150, verbose_name='Soporte Actual', blank=False, null=False, choices=opcion_soporte_actual)
+    facturacion_mensual = models.CharField(max_length=60, verbose_name='Facturación Anual', blank=False, null=False, choices=facturacion_mensual)
     descripcion = models.TextField(max_length=500, verbose_name='Decripción')
+
 
     class Meta:
         db_table = 'formulario'

@@ -47,7 +47,7 @@ nav{
 }
 
 nav > a{
-    color:#fff;
+    color: #83522f;
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
@@ -65,7 +65,7 @@ nav .logocab{
 nav .textlogo{
     margin-left: 10px;
     padding-bottom: 15px;
-    
+    color: #fdbc05;
 }
 
 
@@ -86,7 +86,7 @@ header .textos-header{
 
 .textos-header h1{
     font-size: 50px;
-    color:#fff;
+    color: #fdbc05;
 }
 
 .textos-header h2{
