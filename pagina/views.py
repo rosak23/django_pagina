@@ -1,4 +1,3 @@
-from django.http import HttpRequest
 from django.shortcuts import render, redirect
 from .models import Formulario
 from .forms import FormularioForm
