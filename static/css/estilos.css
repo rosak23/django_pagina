@@ -47,7 +47,7 @@ nav{
 }
 
 nav > a{
-    color: #83522f;
+    color: #fdfdfd;
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
@@ -65,7 +65,7 @@ nav .logocab{
 nav .textlogo{
     margin-left: 10px;
     padding-bottom: 15px;
-    color: #fdbc05;
+    color: #fcbb05;
 }
 
 
@@ -307,9 +307,42 @@ footer{
     color: #9e9797;
 }
 
-#container{
-    align-content: flex-end;
+#id_nombre, #id_empresa,
+#id_email, #id_telefono,
+#id_ciudad, #id_rubro,
+#id_soporte_actual, #id_facturacion_mensual {
+    height: 4rem;
 }
+#id_descripcion {
+    height: 10rem;
+}
+#container{
+    margin: 0;
+    padding: 0;
+}
+
+#divFormulario{
+    margin-left: 400px;
+    transform: translate(-10%, 10%);
+}
+.presentacion {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.presu{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 60px;
+    top: auto;
+    right: auto;
+    left: 30rem;
+
+}
+
+
 
 @media screen and (max-width:900px){
     header{

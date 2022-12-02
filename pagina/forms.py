@@ -21,8 +21,8 @@ class FormularioForm(forms.ModelForm):
             'email': forms.EmailInput(attrs={'Placeholder': 'Correo Electronico', 'class': 'form-control'}),
             'telefono': forms.NumberInput(attrs={'Placeholder': 'Celular', 'class': 'form-control'}),
             'ciudad': forms.TextInput(attrs={'Placeholder': 'Ciudad', 'class': 'form-control'}),
-            'rubro': forms.TextInput(attrs={'Placeholder': 'A que rubro se dedica tú Empresa? ->Ej: Mercado, Farmacia, Ferretería, etc.', 'class': 'form-control'}),
+            'rubro': forms.TextInput(attrs={'Placeholder': 'A que rubro se dedica tú Empresa?', 'class': 'form-control'}),
             'soporte_actual': forms.Select(attrs={'Placeholder': 'Soporte Actual', 'class': 'form-control'}),
             'facturacion_mensual': forms.Select(attrs={'Placeholder': 'Facturación Mensual', 'class': 'form-control'}),
-            'descripcion': forms.Textarea(attrs={'Placeholder': 'Describenos para conocerte mejor', 'class': 'form-control'}),
+            'descripcion': forms.Textarea(attrs={'Placeholder': 'Describenos las necesidades detalladamente de tu Empresa', 'class': 'form-control'}),
         }

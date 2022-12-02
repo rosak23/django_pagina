@@ -6,45 +6,46 @@
 
     <section id="container">
 
-        <form  method="post">
+        <form  method="post" id="divFormulario">
                 {% csrf_token %}
-            <div class="col-md-6">
-                <div class="form-row">
+            <div class="col-md-10">
+                <div class="form-row" >
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Nombre</label>
+{#                        <label for="inputEmail4">Nombre</label>#}
                         {{ formulario.nombre }}
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Empresa</label>
+{#                        <label for="inputPassword4">Empresa</label>#}
                         {{formulario.empresa}}
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputEmail">Email</label>
+{#                        <label for="inputEmail">Email</label>#}
                         {{formulario.email}}
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Telefono</label>
+{#                        <label for="inputPassword4">Telefono</label>#}
                         {{formulario.telefono}}
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputCiudad">Ciudad</label>
+{#                        <label for="inputCiudad">Ciudad</label>#}
                         {{formulario.ciudad}}
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputCiudad">Rubro de tú Empresa</label>
+{#                        <label for="inputCiudad">Rubro de tú Empresa</label>#}
                         {{formulario.rubro}}
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputSoporte">Soporte Actual</label>
+{#                        <label for="inputSoporte">Soporte Actual</label>#}
                         {{formulario.soporte_actual}}
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputSoporte">Facturación Anual</label>
+{#                        <label for="inputSoporte">Facturación Anual</label>#}
                         {{formulario.facturacion_mensual}}
 
                     </div>
                     <div class="form-group col-md-12">
-                        <h5><span>Describenos un poco más de las necesidades de tu Empresa</span></h5>
+{#                        <h5><span>Describenos un poco más de las necesidades de tu Empresa</span></h5>#}
+                        <span> Solicitando un presupuesto usted no asume  obligacion alguna con SYSTEM SOLUCIONES</span>
                         {{formulario.descripcion}}
                     </div>
                     <div class="form-group col-md-12">
