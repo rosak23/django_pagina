@@ -21,6 +21,7 @@ body {
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
     
 }
 
@@ -312,9 +313,12 @@ footer{
 #id_ciudad, #id_rubro,
 #id_soporte_actual, #id_facturacion_mensual {
     height: 4rem;
+    border-bottom-color: #060709;
+    border-color: #060709;
 }
 #id_descripcion {
     height: 10rem;
+    border-color: #060709;
 }
 #container{
     margin: 0;
@@ -322,6 +326,7 @@ footer{
 }
 
 #divFormulario{
+
     margin-left: 400px;
     transform: translate(-10%, 10%);
 }
@@ -338,10 +343,9 @@ footer{
     margin-left: 60px;
     top: auto;
     right: auto;
-    left: 30rem;
+    left: 20rem;
 
 }
-
 
 
 @media screen and (max-width:900px){
