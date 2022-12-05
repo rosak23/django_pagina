@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Formulario, Seguimiento
+from .models import Formulario
 from .forms import FormularioForm
 
 
@@ -30,7 +30,5 @@ def producto(request):
 
 # vista mostrar clientes
 def editarSeguimiento(request):
-    seguimiento = Seguimiento.objects.select_related().all()
-    if seguimiento in seguimiento:
-        print(seguimiento)
+    seguimiento = Formulario.objects.all()
     return render(request, 'paginas/mostrarCliente.html', {'seguimiento': seguimiento})

@@ -40,13 +40,11 @@ class Formulario(models.Model):
     soporte_actual = models.TextField(max_length=150, verbose_name='Soporte Actual', blank=False, null=False, choices=opcion_soporte_actual, default='Soporte Actual?')
     facturacion_mensual = models.CharField(max_length=60, verbose_name='Facturación Anual', blank=False, null=False, choices=facturacion_mensual, default='Facturación Anual en Gs? ')
     descripcion = models.TextField(max_length=500, verbose_name='Decripción')
+    estado = models.CharField(max_length=20, verbose_name='Estado de Venta', null=True, blank=True,
+                              choices=esta_seguimiento, default='En Atención', editable=False)
 
 
     class Meta:
         db_table = 'formulario'
 
 
-
-class Seguimiento(models.Model):
-    cliente = models.ForeignKey(Formulario, null=True, blank=True, on_delete=models.CASCADE, related_name='formulario')
-    estado = models.CharField(max_length=20, verbose_name='Estado de Venta', null=True, blank=True, choices=esta_seguimiento, default='Nuevo', editable=False)

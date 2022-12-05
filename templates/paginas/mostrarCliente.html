@@ -31,15 +31,23 @@
             </thead>
             <tbody>
             {% for seguimiento in seguimiento %}
-                <br>
                 <tr >
-                    <td >{{ seguimiento.cliente.nombre }}</td>
-                    <td >{{ seguimiento.cliente.empresa }}</td>
-                    <td >{{ seguimiento.cliente.email }}</td>
-                    <td >{{ seguimiento.cliente.telefono }}</td>
-                    <td >{{ seguimiento.cliente.ciudad }}</td>
-                    <td >{{ seguimiento.cliente.rubro }}</td>
-                    <td >{{ seguimiento.estado }}</td>
+                    <td >{{ seguimiento.nombre }}</td>
+                    <td >{{ seguimiento.empresa }}</td>
+                    <td >{{ seguimiento.email }}</td>
+                    <td >{{ seguimiento.telefono }}</td>
+                    <td >{{ seguimiento.ciudad }}</td>
+                    <td >{{ seguimiento.rubro }}</td>
+                    <td >
+                        <div class="form-group col-md-8">
+                            <label for="inputState">Opciones</label>
+                            <select id="inputState" class="form-control">
+                                <option >{{ seguimiento.estado }}</option>
+                                <option>{{ seguimiento.estado }}</option>
+                                <option>{{ seguimiento.estado }}</option>
+                            </select>
+                        </div>
+                    </td>
                 </tr>
             {% endfor %}
         </table>
