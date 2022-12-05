@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Formulario
+from .models import Formulario, Seguimiento
 from .forms import FormularioForm
 
 
@@ -17,35 +17,6 @@ def nuestro_servicio(request):
 
 
 def insertarFormulario(request):
-    # contex = {}
-    # template_name = 'registrarFormulario.html'
-    # if request.method == "POST":
-    #     form = FormularioForm(request.POST)
-    #     if form.is_valid():
-    #         nombre = form.cleaned_data.get('nombre')
-    #         empresa = form.cleaned_data.get('empresa')
-    #         email = form.cleaned_data.get('email')
-    #         telefono = form.cleaned_data.get('telefono')
-    #         ciudad = form.cleaned_data.get('ciudad')
-    #         soporte_actual = form.cleaned_data.get('soporte_actual')
-    #         facturacion_mensual = form.cleaned_data.get('facturacion_mensual')
-    #         descripcion = form.cleaned_data.get('descripcion')
-    #         registrar = Formulario.objects.create(
-    #             nombre=nombre,
-    #             empresa=empresa,
-    #             email=email,
-    #             telefono=telefono,
-    #             ciudad=ciudad,
-    #             soporte_actual=soporte_actual,
-    #             facturacion_mensual=facturacion_mensual,
-    #             descripcion=descripcion
-    #         )
-    #         registrar.save()
-    # else:
-    #     form = FormularioForm()
-    # contex['form'] = form
-    # return render(request, template_name, contex)
-
     formulario = FormularioForm(request.POST or None)
     if formulario.is_valid():
         formulario.save()
@@ -55,3 +26,11 @@ def insertarFormulario(request):
 
 def producto(request):
     return render(request, 'paginas/producto.html')
+
+
+# vista mostrar clientes
+def editarSeguimiento(request):
+    seguimiento = Seguimiento.objects.select_related().all()
+    if seguimiento in seguimiento:
+        print(seguimiento)
+    return render(request, 'paginas/mostrarCliente.html', {'seguimiento': seguimiento})
